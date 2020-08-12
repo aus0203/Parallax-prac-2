@@ -1,0 +1,33 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #00002e;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; //The overflow property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+         //object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+        //cover - The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit
+    }
+    .back{
+        z-index: -2;
+    }
+}
